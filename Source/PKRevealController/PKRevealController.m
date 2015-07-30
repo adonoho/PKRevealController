@@ -1365,7 +1365,7 @@ typedef struct
     }
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     if ([self hasLeftViewController] && [self hasRightViewController])
     {

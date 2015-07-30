@@ -40,16 +40,15 @@
 
 + (instancetype)animation
 {
-    PKAnimation *animation = self.new;
+    PKAnimation *animation = (PKAnimation *)[super animation];
     animation.delegate = animation;
     return animation;
 }
 
 + (instancetype)animationWithKeyPath:(NSString *)path
 {
-    PKAnimation *animation = self.new;
+    PKAnimation *animation = (PKAnimation *)[super animationWithKeyPath:path];
     animation.delegate = animation;
-    animation.keyPath = path;
     return animation;
 }
 
